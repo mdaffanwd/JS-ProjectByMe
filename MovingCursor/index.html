@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Text</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+body {
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'Playfair Display SC', serif;
+}
+
+p {
+  color: #fff;
+  max-width: 700px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: transparent;
+  background: transparent;
+  color: #fff;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* JavaScript */
+div.cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  height: 25px;
+  /* margin: 20px; */
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: cursor 6s infinite alternate;
+}
+button:hover{
+cursor:zoom-in;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="cursor"></div>
+    <div class="container">
+      <h1>Mouse Cursor Project</h1>
+      <p>You can only manage people, not the time</p>
+      <p>- Hitesh Choudhary</p>
+      <button>Chai aur code</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
