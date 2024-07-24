@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Watch | Mohammad Affan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+      }
+      .container{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 60vw;
+      }
+      .hr, .min, .sec{
+        display: grid;
+        place-items: center;
+        font-size: 4rem;
+        /* text-align: center; */
+        width: 30%;
+        border: 2px solid rgb(255, 0, 0);
+        height: 30%;
+        background-color: blue;
+        border: 2px solid rgb(255, 0, 0);
+
+      }
+      .ampm{
+        width: 5%;
+        height: 10%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hr"></div>
+      <div class="min"></div>
+      <div class="sec"></div>
+    </div>
+  </body>
+</html>
